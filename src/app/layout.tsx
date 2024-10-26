@@ -1,4 +1,15 @@
 import './globals.css';
+import type { Metadata } from 'next';
+import { Work_Sans } from 'next/font/google';
+
+export const metadata: Metadata = {
+    title: 'Verfy',
+};
+
+const workSans = Work_Sans({
+    subsets: ['latin'],
+    display: 'swap',
+});
 
 export default function RootLayout({
     children,
@@ -7,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <body>{children}</body>
+            <body className={workSans.className}>{children}</body>
         </html>
     );
 }
