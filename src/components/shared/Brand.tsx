@@ -1,8 +1,8 @@
-import { Logo } from '@components';
+import { Logo, Styles } from '@components';
 
 export default function Brand() {
     return (
-        <div>
+        <div className={Styles.brand}>
             <Logo
                 width={35}
                 height={35}

@@ -1,3 +1,4 @@
+import { Styles } from '@components';
 import { ReactNode } from 'react';
 
 interface MainProps {
@@ -5,5 +6,5 @@ interface MainProps {
 }
 
 export default function Main({ children }: MainProps) {
-    return <main>{children}</main>;
+    return <main className={Styles.main}>{children}</main>;
 }

@@ -1,3 +1,4 @@
+import { Styles } from '@components';
 import { ReactNode } from 'react';
 
 interface ContainerProps {
@@ -5,5 +6,5 @@ interface ContainerProps {
 }
 
 export default function Container({ children }: ContainerProps) {
-    return <div>{children}</div>;
+    return <div className={Styles.container}>{children}</div>;
 }

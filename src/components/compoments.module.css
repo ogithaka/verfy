@@ -1,0 +1,104 @@
+/* 
+
+    Components
+
+*/
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80px;
+    width: 100%;
+}
+
+/* Brand */
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.brand p {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Main */
+.main {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+/* Footer */
+.footer {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* 
+
+    Breakpoints 
+
+*/
+
+@media (min-width: 0px) and (max-width: 384px) {
+    /* Header, Main */
+    .header,
+    .main {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: calc(100% - 32px);
+    }
+}
+
+@media (min-width: 384px) and (max-width: 768px) {
+    /* Header, Main */
+    .header,
+    .main {
+        padding-left: 32px;
+        padding-right: 32px;
+        width: calc(100% - 64px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1536px) {
+    /* Header, Main */
+    .header,
+    .main {
+        padding-left: 64px;
+        padding-right: 64px;
+        width: calc(100% - 128px);
+    }
+}
+
+@media (min-width: 1536px) {
+    /* Header, Main */
+    .header,
+    .main {
+        padding-left: calc(64px + calc(100% - 1536px) / 2);
+        padding-right: calc(64px + calc(100% - 1536px) / 2);
+        width: calc(
+            100% - calc(64px + calc(100% - 1536px) / 2) -
+                calc(64px + calc(100% - 1536px) / 2)
+        );
+    }
+}
