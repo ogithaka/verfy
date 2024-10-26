@@ -1,9 +1,15 @@
-import { Brand, Styles } from '@components';
+import { Brand, Navigation, Styles } from '@components';
+import { ReactNode } from 'react';
 
-export default function Header() {
+interface HeaderProps {
+    children?: ReactNode;
+}
+
+export default function Header({ children }: HeaderProps) {
     return (
         <header className={Styles.header}>
             <Brand />
+            <Navigation>{children}</Navigation>
         </header>
     );
 }

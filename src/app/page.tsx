@@ -1,9 +1,30 @@
-import { Container, Footer, Header, Main } from '@components';
+import {
+    Button,
+    Container,
+    Footer,
+    Header,
+    Main,
+    NavigationItem,
+} from '@components';
 
 export default function Landing() {
     return (
         <>
-            <Header></Header>
+            <Header>
+                <NavigationItem
+                    url=''
+                    name='Landing'
+                    active
+                />
+                <NavigationItem
+                    url=''
+                    name='Docs'
+                />
+                <Button
+                    url=''
+                    name='Access'
+                />
+            </Header>
             <Main>
                 <Container></Container>
                 <Footer></Footer>
