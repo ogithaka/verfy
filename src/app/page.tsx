@@ -6,6 +6,7 @@ import {
     Main,
     NavigationItem,
 } from '@components';
+import Hero from './views/Hero';
 
 export default function Landing() {
     return (
@@ -26,7 +27,9 @@ export default function Landing() {
                 />
             </Header>
             <Main>
-                <Container></Container>
+                <Container>
+                    <Hero />
+                </Container>
                 <Footer></Footer>
             </Main>
         </>

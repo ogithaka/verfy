@@ -1,0 +1,60 @@
+/* 
+
+    Landing Page Styles
+
+*/
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.hero_imagery {
+    min-width: 55%;
+}
+
+.hero_imagery img {
+    width: 100%;
+    height: auto;
+    border-radius: 32px;
+}
+
+.hero_textuals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero_textuals h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.hero_textuals h2 {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* 
+
+    Breakpoints
+
+*/
+@media (min-width: 0px) and (max-width: 768px) {
+    /* Hero */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .hero_imagery {
+        width: 100%;
+    }
+}
