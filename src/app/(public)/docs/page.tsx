@@ -1,5 +1,13 @@
 import { Hero } from '@/app/views/views';
-import { Aside, Button, Header, Main, Menu, NavigationItem } from '@components';
+import {
+    Aside,
+    Button,
+    Header,
+    Main,
+    Menu,
+    MenuItem,
+    NavigationItem,
+} from '@components';
 
 export default function Docs() {
     return (
@@ -19,7 +27,17 @@ export default function Docs() {
                     name='Access'
                 />
             </Header>
-            <Menu />
+            <Menu>
+                <MenuItem
+                    url=''
+                    name='Docs'
+                    active
+                />
+                <MenuItem
+                    url=''
+                    name='Setup'
+                />
+            </Menu>
             <Main>
                 <></>
             </Main>
