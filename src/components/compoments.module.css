@@ -28,11 +28,13 @@
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
+    text-decoration: none;
 }
 
 .brand p {
     font-weight: 700;
     font-size: 24px;
+    color: black;
 }
 
 /* Main */
@@ -139,7 +141,7 @@
 .aside {
     position: absolute;
     top: 41px;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 120px - 18px);
     width: 225px;
     background-color: white;
     border-right: 1px solid var(--black-5-percent);
@@ -151,6 +153,7 @@
     padding-top: 16px;
     padding-right: 16px;
     gap: 16px;
+    overflow-y: auto;
 }
 
 /* Menu */
@@ -339,13 +342,13 @@
 
     .navigation_item_active::before {
         content: '';
-        width: 8px;
-        height: 24px;
+        width: 6px;
+        height: 16px;
         display: block;
         background-color: black;
         position: absolute;
-        left: 4px;
         border-radius: 10px;
+        margin-left: -18px;
     }
 
     /* Aside */
@@ -420,13 +423,13 @@
 
     .navigation_item_active::before {
         content: '';
-        width: 8px;
-        height: 24px;
+        width: 6px;
+        height: 16px;
         display: block;
         background-color: black;
         position: absolute;
-        left: 4px;
         border-radius: 10px;
+        margin-left: -18px;
     }
 
     /* Aside */

@@ -22,7 +22,7 @@ export default function Landing() {
                     name='Docs'
                 />
                 <Button
-                    url=''
+                    url='/login'
                     name='Access'
                 />
             </Header>

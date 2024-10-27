@@ -1,13 +1,17 @@
 import { Logo, Styles } from '@components';
+import Link from 'next/link';
 
 export default function Brand() {
     return (
-        <div className={Styles.brand}>
+        <Link
+            href={'/'}
+            className={Styles.brand}
+        >
             <Logo
                 width={35}
                 height={35}
             />
             <p>Verfy</p>
-        </div>
+        </Link>
     );
 }
