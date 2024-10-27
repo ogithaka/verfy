@@ -13,6 +13,8 @@ export { default as NavigationItem } from './shared/NavigationItem';
 export { default as Button } from './shared/Button';
 export { default as Menu } from './layout/Menu';
 export { default as MenuItem } from './shared/MenuItem';
+export { default as Form } from './shared/Form';
+export { default as InputField } from './shared/InputField';
 
 // styles
 export { default as Styles } from './compoments.module.css';
