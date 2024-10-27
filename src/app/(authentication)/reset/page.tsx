@@ -1,6 +1,7 @@
-import { Button, Header, Main, NavigationItem } from '@components';
+import Authentication from '@/app/views/Authentication';
+import { Button, Header, InputField, Main, NavigationItem } from '@components';
 
-export default function Reset() {
+export default function Register() {
     return (
         <>
             <Header>
@@ -11,6 +12,7 @@ export default function Reset() {
                 <NavigationItem
                     url='/register'
                     name='Register'
+                    active
                 />
                 <Button
                     url='/reset'
@@ -19,7 +21,18 @@ export default function Reset() {
                 />
             </Header>
             <Main>
-                <></>
+                <Authentication>
+                    <InputField
+                        placeholder='e.g john@mail.com'
+                        type='email'
+                        label='Email'
+                        id='email'
+                    />
+                    <InputField
+                        type='submit'
+                        value='Reset'
+                    />
+                </Authentication>
             </Main>
         </>
     );
