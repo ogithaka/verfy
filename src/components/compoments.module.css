@@ -156,6 +156,7 @@
     height: 40px;
     width: 100%;
 }
+
 .trigger_menu {
     display: flex;
     flex-direction: row;
@@ -164,6 +165,11 @@
     height: 100%;
     gap: 16px;
 }
+
+.trigger_menu:hover {
+    cursor: pointer;
+}
+
 .trigger_menu p {
     font-weight: 500;
 }
@@ -209,7 +215,8 @@
     .navigation_dropdown {
         z-index: 999;
         position: absolute;
-        top: 81px; /* its supposed to be 80px, added 1px to include the header's bottom margin */
+        top: 81px;
+        /* its supposed to be 80px, added 1px to include the header's bottom margin */
         display: flex;
         display: flex;
         flex-direction: column;
@@ -288,7 +295,8 @@
     .navigation_dropdown {
         z-index: 999;
         position: absolute;
-        top: 81px; /* its supposed to be 80px, added 1px to include the header's bottom margin */
+        top: 81px;
+        /* its supposed to be 80px, added 1px to include the header's bottom margin */
         display: flex;
         display: flex;
         flex-direction: column;
@@ -304,6 +312,7 @@
         background-color: white;
         overflow-y: auto;
     }
+
     .navigation_dropdown a {
         width: calc(100% - 16px);
     }
