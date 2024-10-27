@@ -18,6 +18,7 @@
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 999;
 }
 
 /* Brand */
@@ -134,6 +135,39 @@
     font-weight: 600;
 }
 
+/* Aside */
+.aside {
+    position: absolute;
+    top: calc(122px + 16px);
+    height: calc(100vh - 122px - 16px);
+    width: 225px;
+    background-color: white;
+    border-right: 1px solid var(--black-5-percent);
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Menu */
+.menu {
+    border-bottom: 1px solid var(--black-5-percent);
+    height: 40px;
+    width: 100%;
+}
+.trigger_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 16px;
+}
+.trigger_menu p {
+    font-weight: 500;
+}
+
 /* 
 
     Breakpoints 
@@ -173,6 +207,7 @@
     }
 
     .navigation_dropdown {
+        z-index: 999;
         position: absolute;
         top: 81px; /* its supposed to be 80px, added 1px to include the header's bottom margin */
         display: flex;
@@ -209,6 +244,12 @@
         position: absolute;
         left: 4px;
         border-radius: 10px;
+    }
+
+    /* Aside */
+    .aside {
+        padding-left: 16px;
+        border-right: 1px solid var(--black-5-percent);
     }
 }
 
@@ -245,6 +286,7 @@
     }
 
     .navigation_dropdown {
+        z-index: 999;
         position: absolute;
         top: 81px; /* its supposed to be 80px, added 1px to include the header's bottom margin */
         display: flex;
@@ -281,6 +323,12 @@
         left: 4px;
         border-radius: 10px;
     }
+
+    /* Aside */
+    .aside {
+        padding-left: 32px;
+        border-right: 1px solid var(--black-5-percent);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1536px) {
@@ -290,6 +338,12 @@
         padding-left: 64px;
         padding-right: 64px;
         width: calc(100% - 128px);
+    }
+
+    /* Aside */
+    .aside {
+        padding-left: 64px;
+        border-right: 1px solid var(--black-5-percent);
     }
 }
 
@@ -303,5 +357,11 @@
             100% - calc(64px + calc(100% - 1536px) / 2) -
                 calc(64px + calc(100% - 1536px) / 2)
         );
+    }
+
+    /* Aside */
+    .aside {
+        padding-left: calc(64px + calc(100% - 1536px) / 2);
+        border-right: 1px solid var(--black-5-percent);
     }
 }

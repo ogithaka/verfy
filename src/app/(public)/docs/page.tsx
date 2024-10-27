@@ -1,25 +1,17 @@
-import {
-    Button,
-    Container,
-    Footer,
-    Header,
-    Main,
-    NavigationItem,
-} from '@components';
-import Hero from './views/Hero';
+import { Aside, Button, Header, Main, Menu, NavigationItem } from '@components';
 
-export default function Landing() {
+export default function Docs() {
     return (
         <>
             <Header>
                 <NavigationItem
                     url='/'
                     name='Landing'
-                    active
                 />
                 <NavigationItem
                     url='/docs'
                     name='Docs'
+                    active
                 />
                 <Button
                     url=''
@@ -27,7 +19,7 @@ export default function Landing() {
                 />
             </Header>
             <Main>
-                <Hero />
+                <Menu />
             </Main>
         </>
     );
