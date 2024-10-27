@@ -1,9 +1,13 @@
 'use client';
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { Aside, Styles } from '@components';
 import Image from 'next/image';
 
-export default function Menu() {
+interface MenuProps {
+    children?: ReactNode;
+}
+
+export default function Menu({ children }: MenuProps) {
     const [menu, setMenu] = useState(false);
     function triggerMenu() {
         setMenu(!menu);
@@ -39,7 +43,7 @@ export default function Menu() {
                     <p>📌 Pin something here!</p>
                 </div>
             </div>
-            {menu ? <Aside /> : <></>}
+            {menu ? <Aside>{children}</Aside> : <></>}
         </div>
     );
 }

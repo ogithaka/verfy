@@ -1,5 +1,10 @@
 import { Styles } from '@components';
+import { ReactNode } from 'react';
 
-export default function Aside() {
-    return <aside className={Styles.aside}></aside>;
+interface AsideProps {
+    children?: ReactNode;
+}
+
+export default function Aside({ children }: AsideProps) {
+    return <aside className={Styles.aside}>{children}</aside>;
 }

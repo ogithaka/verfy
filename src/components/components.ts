@@ -11,7 +11,8 @@ export { default as Brand } from './shared/Brand';
 export { default as Navigation } from './shared/Navigation';
 export { default as NavigationItem } from './shared/NavigationItem';
 export { default as Button } from './shared/Button';
-export { default as Menu } from './shared/Menu';
+export { default as Menu } from './layout/Menu';
+export { default as MenuItem } from './shared/MenuItem';
 
 // styles
 export { default as Styles } from './compoments.module.css';
