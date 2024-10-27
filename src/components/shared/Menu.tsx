@@ -10,9 +10,12 @@ export default function Menu() {
     }
     return (
         <div className={Styles.menu}>
-            <div onClick={triggerMenu}>
+            <div
+                className={Styles.trigger_menu}
+                onClick={triggerMenu}
+            >
                 {menu ? (
-                    <div className={Styles.trigger_menu}>
+                    <div className={Styles.trigger}>
                         <p>Menu</p>
                         <Image
                             src={'/icons/down-carret.svg'}
@@ -22,7 +25,7 @@ export default function Menu() {
                         />
                     </div>
                 ) : (
-                    <div className={Styles.trigger_menu}>
+                    <div className={Styles.trigger}>
                         <p>Menu</p>
                         <Image
                             src={'/icons/right-carret.svg'}
@@ -32,6 +35,9 @@ export default function Menu() {
                         />
                     </div>
                 )}
+                <div>
+                    <p>📌 Pin something here!</p>
+                </div>
             </div>
             {menu ? <Aside /> : <></>}
         </div>

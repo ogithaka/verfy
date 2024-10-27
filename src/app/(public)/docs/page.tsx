@@ -1,3 +1,4 @@
+import { Hero } from '@/app/views/views';
 import { Aside, Button, Header, Main, Menu, NavigationItem } from '@components';
 
 export default function Docs() {
@@ -18,8 +19,9 @@ export default function Docs() {
                     name='Access'
                 />
             </Header>
+            <Menu />
             <Main>
-                <Menu />
+                <></>
             </Main>
         </>
     );
