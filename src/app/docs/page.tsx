@@ -1,4 +1,3 @@
-import { Hero } from '@/app/views/views';
 import {
     Aside,
     Button,

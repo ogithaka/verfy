@@ -12,6 +12,7 @@ interface InputFieldProps {
     id?: string;
     placeholder?: string;
     value?: string;
+    method?: (e: any) => void;
 }
 
 export default function InputField({
@@ -20,6 +21,7 @@ export default function InputField({
     id,
     placeholder,
     value,
+    method,
 }: InputFieldProps) {
     return (
         <div className={Styles.input_field}>
@@ -30,6 +32,7 @@ export default function InputField({
                 placeholder={placeholder}
                 value={value}
                 className={workSans.className}
+                onChange={method}
             />
         </div>
     );

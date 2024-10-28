@@ -16,7 +16,7 @@ export default function Authentication({ children }: AuthenticationProps) {
                 width={50}
                 height={50}
             />
-            <Form>{children}</Form>
+            {children}
         </section>
     );
 }
