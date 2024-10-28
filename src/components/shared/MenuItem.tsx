@@ -12,6 +12,7 @@ export default function MenuItem({ url, name, active }: MenuItemProps) {
         <Link
             className={active ? Styles.menu_item_active : Styles.menu_item}
             href={url}
+            scroll={false}
         >
             {name}
         </Link>

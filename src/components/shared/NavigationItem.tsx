@@ -18,6 +18,7 @@ export default function NavigationItem({
                 active ? Styles.navigation_item_active : Styles.navigation_item
             }
             href={url}
+            scroll={false} // To remove an autoscroll error
         >
             {name}
         </Link>

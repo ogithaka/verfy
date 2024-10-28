@@ -14,9 +14,13 @@ export default function Login() {
                     url='/register'
                     name='Register'
                 />
-                <Button
+                <NavigationItem
                     url='/reset'
                     name='Reset'
+                />
+                <Button
+                    url='/'
+                    name='Landing'
                 />
             </Header>
             <Main>

@@ -14,9 +14,13 @@ export default function Register() {
                     name='Register'
                     active
                 />
-                <Button
+                <NavigationItem
                     url='/reset'
                     name='Reset'
+                />
+                <Button
+                    url='/'
+                    name='Landing'
                 />
             </Header>
             <Main>

@@ -14,6 +14,7 @@ export default function Hero() {
                     alt='A dynamic abstract background where vibrant orange meets deep navy blue in a smooth gradient. Diagonal stripe patterns run across the canvas, adding movement and energy. The stripes provide contrast to the soft transition of color, giving the image a sense of rhythm and modernity, like bold strokes of paint on a canvas.'
                     width={1000}
                     height={684}
+                    priority
                 />
             </div>
             <div className={LandingStyles.hero_textuals}>

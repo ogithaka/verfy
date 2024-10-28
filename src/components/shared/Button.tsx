@@ -23,6 +23,7 @@ export default function Button({ url, name, type }: ButtonProps) {
         <Link
             className={buttonType}
             href={url}
+            scroll={false}
         >
             {name}
         </Link>

@@ -6,6 +6,7 @@ export default function Brand() {
         <Link
             href={'/'}
             className={Styles.brand}
+            scroll={false}
         >
             <Logo
                 width={35}
