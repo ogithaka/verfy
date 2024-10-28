@@ -1,7 +1,7 @@
 import Authentication from '@/app/views/Authentication';
 import { Button, Header, InputField, Main, NavigationItem } from '@components';
 
-export default function Register() {
+export default function Reset() {
     return (
         <>
             <Header>

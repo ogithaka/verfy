@@ -5,9 +5,10 @@ import Image from 'next/image';
 
 interface MenuProps {
     children?: ReactNode;
+    name?: string;
 }
 
-export default function Menu({ children }: MenuProps) {
+export default function Menu({ children, name }: MenuProps) {
     const [menu, setMenu] = useState(false);
     function triggerMenu() {
         setMenu(!menu);
@@ -20,7 +21,7 @@ export default function Menu({ children }: MenuProps) {
             >
                 {menu ? (
                     <div className={Styles.trigger}>
-                        <p>Menu</p>
+                        <p>{name ? name : 'Menu'}</p>
                         <Image
                             src={'/icons/down-carret.svg'}
                             alt='Right Carret Icon'
@@ -30,7 +31,7 @@ export default function Menu({ children }: MenuProps) {
                     </div>
                 ) : (
                     <div className={Styles.trigger}>
-                        <p>Menu</p>
+                        <p>{name ? name : 'Menu'}</p>
                         <Image
                             src={'/icons/right-carret.svg'}
                             alt='Right Carret Icon'
@@ -39,7 +40,7 @@ export default function Menu({ children }: MenuProps) {
                         />
                     </div>
                 )}
-                <div>
+                <div className={Styles.menu_pin}>
                     <p>📌 Pin something here!</p>
                 </div>
             </div>
